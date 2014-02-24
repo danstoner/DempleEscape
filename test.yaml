@@ -1,0 +1,30 @@
+- room: entrance
+  description : |
+    ****** Welcome to Demple Escape ******
+    
+    You are standing at the entrance to the hidden temple.
+    
+    Do you wish to:
+    1. enter the temple
+    2. run away like a baby
+    
+- room: room1
+  description : |
+    This is room1.
+- room: room2
+  description : |
+    
+    This is room2.
+    This is more description.
+
+    with some ***  *** stars
+    
+    with a question mark ?
+    
+    1. and here.
+    2. are some numbers.
+    3. the end.
+    
+- room: exit
+  description : |
+    This is the exit.

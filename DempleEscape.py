@@ -14,6 +14,24 @@
 
 from sys import exit
 
+try:
+    import yaml
+except ImportError:
+    print ("**Error: failed to import yaml module. Please install Python yaml module.**")
+
+#room_texts_filename = "room_texts.yaml"
+room_texts_filename = "test.yaml"
+# see if room_texts exists and read it into a dictionary
+try:
+    room_texts = yaml.load(file(room_texts_filename, 'r'))
+except yaml.YAMLError, exc:
+    print "**Error in room data file**", exc
+
+# room_texts = load(room_texts_file)
+
+
+exit (0)
+
 room_texts = {
     "entrance":"""
 
