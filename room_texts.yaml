@@ -1,0 +1,49 @@
+- room: entrance
+  description : |
+  	      
+  	      ****** Welcome to Demple Escape ******
+	      
+	      You are standing at the entrance to the hidden temple.
+	      
+	      Do you wish to:
+	      1. enter the temple
+	      2. run away like a baby 
+- room: first_chamber
+  description : |
+  	      
+  	      You are in the first chamber.  A large stone now blocks the entrance behind you.
+	      A small stone statue stand before you.
+	      
+	      Choose:
+	      1. take statue
+	      2. go deeper into the temple
+- room: long_hall
+  description : |
+  	      
+  	      You are in a very long hall lit by torches.
+	      You notice that some of the stones are slightly darker than the rest.
+	      
+	      As you walk down the hall, do you:
+	      1. avoid the dark stones
+	      2. step only on dark stones
+	      3. walk carelessly without paying attention
+- room: treasure_chamber
+  description: |
+  	       
+  	       You have found the treasure chamber!
+	       
+	       All around you are piles of gold and precious gems.
+	       In the center of the room is a huge diamond.
+	       
+	       What do you do?
+	       1. do not touch the huge diamond but take everything else you can carry
+	       2. grab the huge diamond first
+	       3. take only gold
+	       4. exit through the doorway on the far side of the room without taking anything
+- room: exit
+  description: |
+  	       
+	       Congratulations! You found the exit and survived the temple!
+	       Unfortunately you did not collect any treasure.
+	       
+	       Enjoy the rest of your life!
