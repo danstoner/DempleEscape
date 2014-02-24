@@ -1,11 +1,16 @@
-# Demple Escape - (Dan's Temple Escape) - choose your own adventure game
+# Demple Escape - (Dan's Temple Escape) - text-based adventure game
 # by Dan Stoner
 # 
+# Major content contributions by:
+# Avery Stoner and Julia Stoner
+#
 # License: GPL v2
 # 
+#
 # Notes:
 # Inspired by examples 35,36 in the Learn Python the Hard Way tutorial series
 # http://learnpythonthehardway.org/
+
 
 from sys import exit
 
