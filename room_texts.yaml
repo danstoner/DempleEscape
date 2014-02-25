@@ -2,10 +2,9 @@
   description: |
     In this file the indentation is important!
     All of the room text (including blank lines) must
-    be indented.
+    be indented with spaces, not tabs.
     
     There are 4 blank spaces in the previous line.
-    
 - room: entrance
   description : |
     
@@ -58,4 +57,31 @@
     Unfortunately you did not collect any treasure.
     
     Enjoy the rest of your life!
+    
+- room: cursed_room
+  description: |
+    
+    You are standing in a small room with a very low ceiling.
+    
+    There are five doorways.  Each doorway has a picture over it.
+    
+    Which doorway do you choose:
+    1. panther
+    2. moon
+    3. sun
+    4. turtle
+    5. bird
+    
+- room: chasm
+  description: |
+    You are standing above a deep chasm. In the darkness below you hear the sound
+    of a raging river. On the other side of the chasm you see a platform and a door. The only
+    way to get across appears to be a pair of ropes.
+    
+    What do you do?
+    1. Try to jump across.
+    2. Use the rope on the left.
+    3. Use the rope on the right.
+    
+
     

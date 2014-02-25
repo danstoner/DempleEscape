@@ -62,12 +62,43 @@ def enter_long_hall():
     print room_texts['long_hall']
     choice = get_choice()
     if "1" in choice:
-        enter_treasure_chamber()
+        enter_cursed_room()
     elif "2" in choice or "3" in choice:
-        print "You step on a dark stone that depresses slightly."
+        print "You step on a dark stone and feel it depress slightly."
     else:
         what()
         enter_long_hall()
+
+def enter_cursed_room():
+    print room_texts['cursed_room']
+    choice = get_choice()
+    if "1" in choice:
+        enter_exit()
+    elif "2" in choice:
+        enter_exit()
+    elif "3" in choice:
+        enter_exit()
+    elif "4" in choice:
+        enter_chasm()
+    elif "5" in choice():
+        enter_exit()
+    else:
+        what()
+        enter_cursed_room()
+
+def enter_chasm():
+    print room_texts['chasm']
+    choice = get_choice()
+    if "1" in choice:
+        dead("Aaaaahhhh....  You fall to your doom!")
+    elif "2" in choice:
+        enter_treasure_chamber()
+    elif "3" in choice:
+        dead("Aaaaahhhh....  You fall to your doom!")
+    else:
+        what()
+        enter_chasm()
+
 
 def enter_treasure_chamber():
     print room_texts['treasure_chamber']
@@ -78,10 +109,21 @@ def enter_treasure_chamber():
         print "The instant you touch the treasure the room goes dark."
     else:
         what()
+        enter_treasure_chamber()
 
 def enter_exit():
     print room_texts['exit']
     exit(0)
+
+def fallout():
+    print """
+
+You fall down a hole and slide into an underground river.
+After what seems like a very long time, you emerge into daylight and crawl ashore.
+
+You will never find your way back to the temple and the possible treasure inside!
+
+"""
 
 #######  BEGIN main Program #####
 
@@ -98,65 +140,13 @@ for room in room_texts_yaml:
     room_name = room['room']
     room_description = room['description']
     room_texts[room_name] = room_description
-  
+
+# Enter the Temple!!!  
 start()
 
 # the fallout condition
-print """
-You fall down a hole and slide into an underground river.
-After what seems like a very long time, you emerge into daylight and crawl ashore.
-
-You will never find your way back to the temple and the possible treasure inside!
-"""
+fallout()
 
 exit(0)
 
 
-# room_texts = {
-#     "entrance":"""
-
-# ****** Welcome to Demple Escape ******
-
-# You are standing at the entrance to the hidden temple.
-
-# Do you wish to:
-# 1. enter the temple
-# 2. run away like a baby 
-# """,
-#     "first_chamber":"""
-# You are in the first chamber.  A large stone now blocks the entrance behind you.
-# A small stone statue stand before you.
-
-# Choose:
-# 1. take statue
-# 2. go deeper into the temple
-# """,
-#     "long_hall":"""
-# You are in a very long hall lit by torches.
-# You notice that some of the stones are slightly darker than the rest.
-
-# As you walk down the hall, do you:
-# 1. avoid the dark stones
-# 2. step only on dark stones
-# 3. walk carelessly without paying attention
-# """,
-#     "treasure_chamber":"""
-
-# You have found the treasure chamber!
-
-# All around you are piles of gold and precious gems.
-# In the center of the room is a huge diamond.
-
-# What do you do?
-# 1. do not touch the huge diamond but take everything else you can carry
-# 2. grab the huge diamond first
-# 3. take only gold
-# 4. exit through the doorway on the far side of the room without taking anything
-# """,
-#     "exit":"""
-# Congratulations! You found the exit and survived the temple!
-# Unfortunately you did not collect any treasure.
-
-# Enjoy the rest of your life!
-# """
-# }
