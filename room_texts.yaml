@@ -58,6 +58,17 @@
     
     Enjoy the rest of your life!
     
+- room: diamond_exit
+  description: |
+    
+    The floor drops out and you tumble down a tunnel and land in a beautiful meadow.
+    You are dazed by the bright sunshine.  Once your eyes adjust, you see the
+    sparkling diamond in your hand.
+    
+    Congratulations, you have escaped the temple with a valuable treasure!
+    
+    Good luck with your diamond!
+    
 - room: cursed_room
   description: |
     
@@ -83,5 +94,13 @@
     2. Use the rope on the left.
     3. Use the rope on the right.
     
-
+- room: magic_room
+  description: |
+    You are standing in a room with a high ceiling. In the center of the room,
+    you see a well with a rope disappearing into its opening.
+    
+    Do you:
+    1. continue to the next room
+    2. peer inside the well
+    3. pull the rope out of the well
     

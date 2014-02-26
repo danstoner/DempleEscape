@@ -99,17 +99,38 @@ def enter_chasm():
         what()
         enter_chasm()
 
+def enter_magic_room():
+    print room_texts['magic_room']
+    choice = get_choice()
+    if "1" in choice:
+        enter_cursed_room()
+    elif "2" in choice:
+        print "You see a bucket at the end of the rope."
+        ender_magic_room()
+    elif "3" in choice:
+        dead("The rope pulls back! You fall into the bottom of the well\nand are never heard from again!")
+    else:
+        what()
+        enter_magic_room()
+
 
 def enter_treasure_chamber():
     print room_texts['treasure_chamber']
     choice = get_choice()
     if "4" in choice:
         enter_exit()
-    elif "1" in choice or "2" in choice or "3" in choice:
+    elif "2" in choice:
+        print "The diamond is large and beautiful!"
+        enter_diamond_exit()
+    elif "1" in choice or "3" in choice:
         print "The instant you touch the treasure the room goes dark."
     else:
         what()
         enter_treasure_chamber()
+
+def enter_diamond_exit():
+    print room_texts['diamond_exit']
+    exit (0)
 
 def enter_exit():
     print room_texts['exit']
