@@ -73,11 +73,11 @@ def enter_cursed_room():
     print room_texts['cursed_room']
     choice = get_choice()
     if "1" in choice:
-        enter_exit()
+        enter_magic_room()
     elif "2" in choice:
-        enter_exit()
+        dead("You feel a strange buzzing sensation and then find yourself unable to breath. \nIt appears that you are on the surface of the moon!")
     elif "3" in choice:
-        enter_exit()
+        enter_cursed_room()
     elif "4" in choice:
         enter_chasm()
     elif "5" in choice():
@@ -105,10 +105,10 @@ def enter_magic_room():
     if "1" in choice:
         enter_cursed_room()
     elif "2" in choice:
-        print "You see a bucket at the end of the rope."
-        ender_magic_room()
+        print "\nYou see a bucket at the end of the rope.\n"
+        enter_magic_room()
     elif "3" in choice:
-        dead("The rope pulls back! You fall into the bottom of the well\nand are never heard from again!")
+        dead("The rope pulls back! You fall into the bottom of the well and are never heard from again!")
     else:
         what()
         enter_magic_room()
